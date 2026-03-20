@@ -4,23 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style>
-.container{
-  display:flex ;
-  flex-direction:column;
- 
- 
-}
-.box{
-  width: 50px;
-  height: 50px;
-  background-color: rgb(191, 253, 255);
-  margin: 5px;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
-    </style>
+   <style>
+    body {
+      /* Gradient background */
+      background: linear-gradient(135deg, #00f, #0ff, #ff0, #f0f);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+  </style>
   
 </head>
 <body>
@@ -77,11 +73,7 @@ let z = Number(document.getElementById("num8").value);
 let product= x*y*z;
 document.getElementById("MULTIPLY result").innerText="answer="+product;
   }
-
 </script>
-
-
-
 </body> 
 </html>
 
