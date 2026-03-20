@@ -37,45 +37,29 @@
       home
     </div>
   </div>
-   .container {
+   <style>
+    .container {
       display: flex;
       justify-content: space-around;
+      gap: 20px;
     }
 
-    /* Boxes with different colors */
-    .winter {
-      background-color: #4DA6FF; /* Light blue for winter */
-      padding: 20px;
-      border-radius: 8px;
+    .winter, .spring {
+      padding: 30px;
+      border-radius: 10px;
       color: white;
-      width: 250px;
+      width: 300px;
     }
 
-    .spring {
-      background-color: #66CC66; /* Light green for spring */
-      padding: 20px;
-      border-radius: 8px;
-      color: white;
-      width: 250px;
-    }
+    .winter { background-color: #bbddff; }
+    .spring { background-color: #66CC66; }
 
-    /* Space between list items */
-    li {
-      margin: 8px 0;
-      line-height: 1.5;
-    }
-
-    /* Center headings inside boxes */
-    h1 {
-      text-align: center;
-      margin-top: 0;
-    }
+    h1 { text-align: center; margin-top: 0; }
+    li { margin: 10px 0; line-height: 1.5; }
   </style>
 </head>
-
 <body>
   <div class="container">
-
     <div class="winter">
       <h1>Winter ❄️</h1>
       <ul>
@@ -95,8 +79,6 @@
         <li>Trees grow new green leaves.</li>
       </ul>
     </div>
-
   </div>
 </body>
-
 </html>
