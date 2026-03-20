@@ -3,4 +3,16 @@ th {
 }
 td {
   border: 1px solid;
-}
+}  .fall{
+      color: rgb(242, 255, 0);
+    }
+    #apple{
+      background-color: rgb(109, 177, 255);
+    }
+    p,h1,.fall{
+      background:linear-gradient(red,orange);
+    }
+    button:hover {
+      background-color: rgb(195, 131, 255);
+      padding:60px;
+    }
