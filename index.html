@@ -37,14 +37,38 @@
       home
     </div>
   </div>
-  <style>
-    .container {
+   .container {
       display: flex;
       justify-content: space-around;
     }
+
+    /* Boxes with different colors */
+    .winter {
+      background-color: #4DA6FF; /* Light blue for winter */
+      padding: 20px;
+      border-radius: 8px;
+      color: white;
+      width: 250px;
+    }
+
+    .spring {
+      background-color: #66CC66; /* Light green for spring */
+      padding: 20px;
+      border-radius: 8px;
+      color: white;
+      width: 250px;
+    }
+
+    /* Space between list items */
     li {
       margin: 8px 0;
       line-height: 1.5;
+    }
+
+    /* Center headings inside boxes */
+    h1 {
+      text-align: center;
+      margin-top: 0;
     }
   </style>
 </head>
@@ -52,7 +76,7 @@
 <body>
   <div class="container">
 
-    <div>
+    <div class="winter">
       <h1>Winter ❄️</h1>
       <ul>
         <li>Winter is a chilly season.</li>
@@ -62,7 +86,7 @@
       </ul>
     </div>
 
-    <div>
+    <div class="spring">
       <h1>Spring 🌸</h1>
       <ul>
         <li>Spring is a season of blooming flowers.</li>
