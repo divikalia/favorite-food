@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Variable Types</title>
+</head>
+
+<body>
+  <h1>JavaScript Variable Types Demo</h1>
+  <p id="output"></p>
+
+  <script>
+    // Different types of variables
+    var name = "Divi";          // String
+    var age = 11;                 // Number
+    var isStudent = false;         // Boolean
+    var hobbies = ["playing", "fighting with my brother"]; // Array
+    var person = {               // Object
+      city: "Bangalore",
+      country: "India"
+    };
+    var nothing = null;           // Null
+    var notDefined;               // Undefined
+
+    // Display output
+    document.getElementById("output").innerHTML =
+      "Name (String): " + name + "<br>" +
+      "Age (Number): " + age + "<br>" +
+      "Is Student (Boolean): " + isStudent + "<br>" +
+      "Hobbies (Array): " + hobbies + "<br>" +
+      "City (Object): " + person.city + "<br>" +
+      "Null value: " + nothing + "<br>" +
+      "Undefined value: " + notDefined;
+  </script>
+<h2>Undefined Example</h2>
+  <p id="result"></p>
+
+  <script>
+    var x; // declared but NOT assigned
+
+    document.getElementById("result").innerHTML =
+      "Value of x is: " + x + "<br>" +
+      "Type of x is: " + typeof x;
+  </script>
+</body>
+</html>
