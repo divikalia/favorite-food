@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Artisanal Gallery | Fine Handcrafted Marionettes</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Fonts: Noto Serif & Manrope -->
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Noto+Serif:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#5c605d",
+              "on-background": "#2f3330",
+              "secondary-dim": "#6a4c40",
+              "surface-dim": "#d7dbd6",
+              "on-error-container": "#6e0a12",
+              "surface-container-low": "#f3f4f0",
+              "on-tertiary": "#fff8f0",
+              "error": "#a83836",
+              "primary-container": "#efb39c",
+              "background": "#f9f9f6",
+              "tertiary-fixed-dim": "#ecce8c",
+              "surface-tint": "#825441",
+              "primary-dim": "#744836",
+              "inverse-on-surface": "#9c9d9b",
+              "error-container": "#fa746f",
+              "secondary": "#77584c",
+              "tertiary": "#725c25",
+              "secondary-fixed": "#ffdbce",
+              "on-primary-fixed-variant": "#643b2a",
+              "on-primary": "#fff7f5",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-high": "#e6e9e5",
+              "surface-container-highest": "#e0e3df",
+              "on-surface": "#2f3330",
+              "on-primary-fixed": "#411e0f",
+              "secondary-container": "#ffdbce",
+              "on-error": "#fff7f6",
+              "secondary-fixed-dim": "#f5cbbc",
+              "inverse-surface": "#0d0f0d",
+              "on-secondary-fixed-variant": "#745448",
+              "on-primary-container": "#5a3222",
+              "on-tertiary-fixed-variant": "#6c5720",
+              "inverse-primary": "#efb39c",
+              "outline-variant": "#afb3af",
+              "on-secondary-container": "#694b3f",
+              "on-tertiary-container": "#624d17",
+              "surface-bright": "#f9f9f6",
+              "tertiary-fixed": "#fbdc98",
+              "primary": "#825441",
+              "error-dim": "#67040d",
+              "on-secondary": "#fff7f5",
+              "surface": "#f9f9f6",
+              "primary-fixed-dim": "#e0a690",
+              "outline": "#777c78",
+              "on-tertiary-fixed": "#4e3b05",
+              "primary-fixed": "#efb39c",
+              "tertiary-dim": "#65501a",
+              "surface-container": "#eceeea",
+              "on-secondary-fixed": "#55392e",
+              "tertiary-container": "#fbdc98",
+              "surface-variant": "#e0e3df"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif", "serif"],
+              "body": ["Manrope", "sans-serif"],
+              "label": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift-bg {
+            background-color: rgba(249, 249, 246, 0.8);
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #f9f9f6;
+            color: #2f3330;
+        }
+        h1, h2, h3, .serif {
+            font-family: 'Noto Serif', serif;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f9f9f6]/80 dark:bg-[#1a1c1a]/80 backdrop-blur-md shadow-[0_20px_40px_rgba(47,33,48,0.05)]">
+<div class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-xl font-bold font-['Noto_Serif'] text-[#2f3330] dark:text-[#f9f9f6] tracking-[-0.02em]">
+                The Artisanal Gallery
+            </div>
+<div class="hidden md:flex items-center space-x-12 font-['Noto_Serif'] tracking-tight">
+<a class="text-[#825441] dark:text-[#a3705c] font-semibold border-b border-[#825441]/30 transition-colors duration-400" href="#">Gallery</a>
+<a class="text-[#2f3330]/70 dark:text-[#f9f9f6]/70 hover:text-[#2f3330] dark:hover:text-[#f9f9f6] transition-colors duration-400" href="#">Story</a>
+<a class="text-[#2f3330]/70 dark:text-[#f9f9f6]/70 hover:text-[#2f3330] dark:hover:text-[#f9f9f6] transition-colors duration-400" href="#">Carving</a>
+<a class="text-[#2f3330]/70 dark:text-[#f9f9f6]/70 hover:text-[#2f3330] dark:hover:text-[#f9f9f6] transition-colors duration-400" href="#">Studio</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="hover:opacity-80 transition-opacity duration-400 text-[#2f3330]">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+<button class="md:hidden">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-24 overflow-hidden">
+<div class="max-w-screen-2xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-5 z-10">
+<span class="label-md uppercase tracking-[0.2em] text-primary mb-6 block">Established 1924</span>
+<h1 class="text-6xl md:text-8xl font-headline tracking-tighter leading-tight mb-8">
+                    The Art of <br/><span class="italic text-primary-dim">the String</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-md leading-relaxed mb-12 font-body">
+                    Elevating puppetry to a fine art. Each marionette is a singular expression of heritage, hand-carved in our ancestral studio.
+                </p>
+<div class="flex flex-wrap gap-6">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-label uppercase tracking-widest text-xs hover:bg-primary-dim transition-all duration-500 shadow-xl shadow-primary/10">
+                        Explore Collection
+                    </button>
+<button class="border border-outline/20 px-10 py-4 rounded-full font-label uppercase tracking-widest text-xs hover:bg-surface-container-low transition-all duration-500">
+                        Our Process
+                    </button>
+</div>
+</div>
+<div class="lg:col-span-7 relative h-[600px] lg:h-[800px] w-full">
+<div class="absolute inset-0 bg-surface-container-low rounded-xl overflow-hidden shadow-2xl">
+<img alt="Artistic marionette" class="w-full h-full object-cover mix-blend-multiply opacity-90 scale-105 hover:scale-100 transition-transform duration-1000" data-alt="Close up of a handcrafted wooden marionette head" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-vtwiZtJRW3m9AX3-OUeoOjrn2up8RkULnAqOW9tzFvTw1AFCwbBop6p7-MINsrFpxmdddFe0_qGx4qCJUUuLWiE2mTPMfaLOqCkJBMgzGDrG6vCgV4qH9UXUsYEnJBxqapzHN5aKbOv1h4d973inj3PkZI-uyLd0U1bH6PLynfXsfUsvybm4FuOo4YxiBYLiPE_OrGl0V8VPbQMrsbGGshHmcgopYSyyIEW1n_k5Ot0ElVY3DKqtBMeXBpVBAh5aMKP7xLHhtHu1"/>
+</div>
+<!-- Artistic Overlays -->
+<div class="absolute -bottom-12 -left-12 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="absolute top-24 -right-12 p-8 bg-surface-container-lowest/90 backdrop-blur-md rounded-xl shadow-lg border border-outline-variant/10 max-w-[240px] hidden md:block">
+<p class="font-headline italic text-primary text-xl mb-2">"The Whisperer"</p>
+<p class="text-xs uppercase tracking-widest opacity-60">Linden wood, Hand-dyed Silk</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Collections Section (Bento Grid) -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div>
+<h2 class="text-5xl font-headline mb-4">Curated Collections</h2>
+<p class="text-on-surface-variant tracking-widest uppercase text-sm">Three archetypes of master craftsmanship</p>
+</div>
+<a class="text-primary font-label uppercase tracking-widest text-sm border-b border-primary/30 pb-1 hover:text-primary-dim transition-colors" href="#">View All Works</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Classical -->
+<div class="group relative aspect-[3/4] overflow-hidden bg-background rounded-xl">
+<img alt="Classical Marionette" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Traditional 18th century style marionette details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGq75Ty_oIQ2airA4vFE7HLyyTpcnlc8M7NntTBmuXI6JK1xHVtNNW9DtbyWjv9GPjlWgGUFPosMMzxfdZ2KOizMN5ITx2LhX0JlrLDixYiC78SoJaESKEkSFdrjelMRQou-xgIp7PCnFjdam0hD25mAr3HErihCIVo9G9k5LsMkN_gdmMtuWAZZFXZqtZbXP4w67jiCJVx6dZsmK838ZyVQ1BHpSzY7DF53harebqpRf3Jvn64dAZAOdRqiw37X32HZ51GDwLj8cf"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 to-transparent flex flex-col justify-end p-10">
+<h3 class="text-surface text-3xl font-headline mb-2">Classical Marionettes</h3>
+<p class="text-surface/80 text-sm font-body tracking-wide">Timeless elegance from the golden age</p>
+</div>
+</div>
+<!-- Whimsical -->
+<div class="group relative aspect-[3/4] overflow-hidden bg-background rounded-xl md:mt-12">
+<img alt="Whimsical Creature" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Fantasy wooden creature puppet with unique textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4RUF5frQSlahgq2KWojCBMi_tSYsLmWrv_lxR_CBrOzna8N3HLDGIBf26swLsGd_cTtRtz5kGFIPljdQjEhwh0X-Empi4tRkFMjIFLewt1SYXxI_OcD3Yi0YQnJPU-D-tFjmtgELrQ8LQOwRqAW0mVSRZ6TbP0J-Ca3i3MDnD-APPtbdhfA0qO7NGUXMPQ-DogfOkXlMfgPmgqUSXFTOOdRu1Yy_gOJQUP8uiiDaBIqxCCcjutVZBdXY-sUilUdffdEXXtiGa746u"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 to-transparent flex flex-col justify-end p-10">
+<h3 class="text-surface text-3xl font-headline mb-2">Whimsical Creatures</h3>
+<p class="text-surface/80 text-sm font-body tracking-wide">Folk-inspired myths brought to life</p>
+</div>
+</div>
+<!-- Commissions -->
+<div class="group relative aspect-[3/4] overflow-hidden bg-background rounded-xl">
+<img alt="Custom Commission" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Puppet maker workbench with sketches and tools" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2aGqLH1oocsTRkW4a_7uhOM3wX0G8Z1anOUN0NUpD7V5WtdlWc9HJ-jUFiTyhGJjGg_vPwteDNnUglR23OYA9Pf0DZ-Y6LN5s2CGq1x7CYVu_08LZTC_z1ZpEj4iv4dPQ_LZNOn45KYefxkXX07mCeAO4tv4hYwMQMHxG0RFc38ELy-HgrrUyoTnxCpqh1-XRXnGwvT_0EdNFA0cLC4bur42hzCkYMlmXPGeM2D-neEsza0CMVy32ye-AqjtKtZhkjLPluH3g9YSI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 to-transparent flex flex-col justify-end p-10">
+<h3 class="text-surface text-3xl font-headline mb-2">Custom Commissions</h3>
+<p class="text-surface/80 text-sm font-body tracking-wide">A soul crafted specifically for you</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Story Section -->
+<section class="py-40 bg-background overflow-hidden">
+<div class="max-w-screen-2xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="order-2 lg:order-1 relative">
+<div class="relative z-10 w-full aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Master Carver" class="w-full h-full object-cover" data-alt="Elderly craftsman intently carving wood in a sunlit workshop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmiTUanT2sqLk_EmYqtRqnDeEau8rXplMXDZ4gVhJ2YF1vWWtneCxkNzxs2dYY2cLk9_EijKe-ojONjLzqB32b_RXOpeQCq65_TCHtFjudqQRrLMv0V0R0XZEWivaDYtHY6ysM2Qr-Wd1sEr-WVcRg3aIc3cC4azlzkElPdxJqPOEinhpqwPbkCCsRIgQmDagXuM6bh353LrxYgBuQBKSUOjSmPCTwzzKEMKybqf-e_nnif0JsPEdkhgRU3RQFfyoSjvuHzor1Ig2P"/>
+</div>
+<div class="absolute -top-12 -right-12 w-64 h-64 border border-primary/20 -z-0"></div>
+</div>
+<div class="order-1 lg:order-2">
+<span class="label-md uppercase tracking-[0.2em] text-primary mb-8 block">The Maker's Mark</span>
+<h2 class="text-5xl md:text-6xl font-headline leading-tight mb-10">Generations of <span class="italic">Quiet Mastery</span></h2>
+<div class="space-y-6 text-on-surface-variant text-lg leading-relaxed font-body">
+<p>Founded on the belief that objects possess their own stories, The Artisanal Gallery has spent a century perfecting the delicate balance between wood, wire, and cloth.</p>
+<p>Our head carver, Elena Vance, treats every block of linden wood as a collaboration. We don't just build puppets; we invite personalities to emerge through rhythmic chiseling and thousands of hours of hand-painting.</p>
+</div>
+<div class="mt-16 grid grid-cols-2 gap-12">
+<div>
+<p class="text-4xl font-headline text-primary mb-2">40+</p>
+<p class="text-xs uppercase tracking-[0.15em] opacity-60">Years of Experience</p>
+</div>
+<div>
+<p class="text-4xl font-headline text-primary mb-2">1.2k</p>
+<p class="text-xs uppercase tracking-[0.15em] opacity-60">Artworks Created</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Studio Gallery (Asymmetric Layout) -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="text-center mb-24">
+<h2 class="text-5xl font-headline mb-6">Inside the Studio</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto font-body">The tactile reality of our craft. Raw materials transforming into poetic motion.</p>
+</div>
+<div class="grid grid-cols-12 gap-6 md:gap-12">
+<div class="col-span-12 md:col-span-7 aspect-video rounded-xl overflow-hidden group">
+<img alt="Wood texture" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Extreme close up of grain in aged wood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB66xBybOhmXk_Je3ZJEKqBSGIKKo-Hzr_RC_sCA_LeHgq00LodR2I18QS9Ada1L_AdgzQSEY7Hi80_FHho3axc8dCC88rL5zZS5kkpC-r4Sl_YRfVXzzQx6rTRMNxi7olp8nxIupEqALR3RucnzkNKav8lLVvj6qV4RWfos-rjLZDn1TaA9SR-4YTnC32sXPJcBUIG7N6lOO8fhaZY_pOAJU4W5Stocxk2E7aSEn7JUspc5rTcOGUhVyZPmwQT-f-ss-0sXEC33hu"/>
+</div>
+<div class="col-span-12 md:col-span-5 aspect-square rounded-xl overflow-hidden group">
+<img alt="Paint details" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Palette with earthy pigments and fine brushes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVHWDjjYs8KPnQzGpoicY6BLN-qmQPmF_1kY0JJjKgwUG92xYlS1ALfCG_ZZt4uYyqN8Fxgx2PVuvfFDrkkW-oVXF42Q0eAhq7J37BQb3kR0WViOryo7wb6939bOglkD2S3nkEukWrUuWh_rXN5HEpbfB7urw35uxaBayxpcq88BHqjdotnCE1YGwGc97hQaw-BNZ-xpsQS-f70ZdWCyB2b4DikUBdhJlzrYurtjn1578Vsm11x3J6p6tNALO6UlvjqvYamtwDFoE5"/>
+</div>
+<div class="col-span-12 md:col-span-4 aspect-square rounded-xl overflow-hidden group md:-mt-24">
+<img alt="Fine fabrics" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Stack of high quality velvet and silk textiles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg1DCErgQQ0XXccUVZEFS7MGOchWqsPDinGTf-o9aboxKJc9LoBgmfGzE4B-U1HixKbtHLiFsayLEpmHMnByxlqIxGIiu2uNHL2LLnMBVXBtmWj88PJTI0gUdbaMQgikiJREYMiru5x8HvnShlNV-FmO3ssKxN8QlC-QMMxAjqehW8hPwwTUqnAhX-abDfdpXJ79E4zOxRgsTs01vBI-6SnoQF5yb4fHdGThtHGehq83aSBV29zQ7rjpl2cOhjmm1WMgbQmLcv28pT"/>
+</div>
+<div class="col-span-12 md:col-span-8 aspect-[16/7] rounded-xl overflow-hidden group">
+<img alt="Studio table" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Sunlight hitting a workbench with finished puppet hands" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE681PqF46Z9OiZFijnkmek9-sSLSpcZr_LlUwSVaNF3_WpTr4dSvWUJULC0KyIiOGL57tmTRK4qCDfS1NL0lNv5pZAaUT_lKSVa1Lx9kxoL5SR_-A6LFmMbB8akmtR9wf2RYLZXtzPmdMC8vAGLZ3HzJqvIN4gMZGzASMjjOHmOSO3u5eK7drI3ezEWqEKqV6Lqn4lKLkdzxra2vKm_v0qqlvvPwPJyWYtgVTxWb1j9ZZ5sHYCbkq52zlBsDlRpmEQd6cbaX4C9fT"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter -->
+<section class="py-40 bg-background text-center px-8">
+<div class="max-w-2xl mx-auto">
+<span class="material-symbols-outlined text-primary text-4xl mb-8" data-icon="auto_awesome">auto_awesome</span>
+<h2 class="text-4xl md:text-5xl font-headline mb-6">Stay in Motion</h2>
+<p class="text-on-surface-variant mb-12 font-body italic leading-relaxed">
+                Join our curated list to receive early access to new collections and invitations to private studio tours.
+            </p>
+<form class="relative group max-w-lg mx-auto">
+<input class="w-full bg-transparent border-b border-outline-variant/30 py-4 px-2 focus:outline-none focus:border-primary transition-all duration-500 placeholder:text-on-surface/30 placeholder:italic" placeholder="Join our curated list" type="email"/>
+<button class="absolute right-0 bottom-4 text-primary font-label uppercase text-xs tracking-[0.2em] hover:opacity-70 transition-opacity" type="submit">
+                    Join
+                </button>
+</form>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full pt-24 pb-12 bg-[#e6e9e5] dark:bg-[#2f3330]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-16 px-16 max-w-screen-2xl mx-auto">
+<div class="md:col-span-1">
+<div class="text-lg font-['Noto_Serif'] italic text-[#2f3330] dark:text-[#f9f9f6] mb-6">
+                    The Artisanal Gallery
+                </div>
+<p class="font-['Manrope'] text-sm tracking-[0.1em] uppercase text-[#2f3330]/60 dark:text-[#f9f9f6]/60 leading-relaxed">
+                    © 2024 The Artisanal Gallery. Crafted by Hand.
+                </p>
+</div>
+<div>
+<h4 class="font-['Manrope'] text-sm tracking-[0.1em] uppercase text-[#825441] mb-8">Navigation</h4>
+<div class="flex flex-col gap-4 font-['Manrope'] text-sm tracking-[0.1em] uppercase">
+<a class="text-[#2f3330]/60 dark:text-[#f9f9f6]/60 hover:text-[#825441] transition-colors hover:underline decoration-[#825441]/30 underline-offset-4" href="#">Provenance</a>
+<a class="text-[#2f3330]/60 dark:text-[#f9f9f6]/60 hover:text-[#825441] transition-colors hover:underline decoration-[#825441]/30 underline-offset-4" href="#">Care Guide</a>
+</div>
+</div>
+<div>
+<h4 class="font-['Manrope'] text-sm tracking-[0.1em] uppercase text-[#825441] mb-8">Service</h4>
+<div class="flex flex-col gap-4 font-['Manrope'] text-sm tracking-[0.1em] uppercase">
+<a class="text-[#2f3330]/60 dark:text-[#f9f9f6]/60 hover:text-[#825441] transition-colors hover:underline decoration-[#825441]/30 underline-offset-4" href="#">Shipping</a>
+<a class="text-[#2f3330]/60 dark:text-[#f9f9f6]/60 hover:text-[#825441] transition-colors hover:underline decoration-[#825441]/30 underline-offset-4" href="#">Press</a>
+</div>
+</div>
+<div>
+<h4 class="font-['Manrope'] text-sm tracking-[0.1em] uppercase text-[#825441] mb-8">Connect</h4>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-[#2f3330]/60 cursor-pointer hover:text-[#825441]" data-icon="public">public</span>
+<span class="material-symbols-outlined text-[#2f3330]/60 cursor-pointer hover:text-[#825441]" data-icon="mail">mail</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
