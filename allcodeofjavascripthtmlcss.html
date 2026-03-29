@@ -195,3 +195,134 @@
 </body>
 
 </html>
+
+
+let i=0;
+
+
+while (i<=10){
+  console.log(i);
+  i+=2;
+}
+let j=3;
+
+
+while (j<3){
+  console.log(j);
+  j+=3;
+}
+
+let v=3;
+do{
+  console.log(v);
+  v++
+}while(v<3)
+
+or (let i=1;i<=10;i++) 
+
+{
+  console.log(i);
+}
+for (let i=1;i<=10;i+=2)
+{
+  console.log(i);
+}
+//j+=3 means j=j+3
+for (let j=3;j<=30;j+=3)
+{
+  console.log(j);
+}
+
+while (j<3){
+  console.log(j);
+  j+=3;
+}
+
+for (let i=2;i<=100;i+=2) 
+{
+  console.log(i);
+}
+
+
+let i=6;
+
+
+while (i<=60){
+  console.log(i);
+  i+=6;
+}
+
+let v=7;
+do{
+  console.log(v);
+  v+=7;
+}while(v<=70)
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator</title>
+
+<style>
+</style>
+</head>
+
+<body>
+
+<h2>Subtraction➖</h2>
+<input id="num1" type="number">
+<input id="num2" type="number">
+<button onclick="sub()">Subtract</button>
+<p id="subResult"></p>
+
+<h2>Addition➕</h2>
+<input id="num3" type="number">
+<input id="num4" type="number">
+<input id="num5" type="number">
+<button onclick="add()">Add</button>
+<p id="addResult"></p>
+
+<h2>Multiplication✖️</h2>
+<input id="num6" type="number">
+<input id="num7" type="number">
+<input id="num8" type="number">
+<button onclick="multiply()">Multiply</button>
+<p id="multiplyResult"></p>
+
+<script>
+function sub(){
+  let x = Number(num1.value);
+  let y = Number(num2.value);
+  subResult.innerText = "answer=" + (x - y);
+}
+
+function add(){
+  let x = Number(num3.value);
+  let y = Number(num4.value);
+  let z = Number(num5.value);
+  addResult.innerText = "answer=" + (x + y + z);
+}
+
+function multiply(){
+  let x = Number(num6.value);
+  let y = Number(num7.value);
+  let z = Number(num8.value);
+  multiplyResult.innerText = "answer=" + (x * y * z);
+}
+</script>
+<button><a href="index.html"><br>Index</a></button>
+<button><a href="allcode.html"><br>All Code</a></button>
+<button><a href="favouritefoodandpet.html"><br>Favourite Food & Pet</a></button>
+<button><a href="seasonnavbar.html"><br>Season Navbar</a>
+  <button><a href="introduction.html"><br>introduction</a>
+   
+</button>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>THE CANDY JAR | Rainbow Sugar Rush Edition</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-container": "#004d68",
+              "on-secondary": "#e6f5ff",
+              "on-error-container": "#510017",
+              "tertiary": "#883a97",
+              "surface-dim": "#d9d3d7",
+              "error-dim": "#a70138",
+              "primary-fixed-dim": "#f06292",
+              "primary-dim": "#971b4e",
+              "primary-fixed": "#ff709f",
+              "secondary-fixed": "#97daff",
+              "on-tertiary-fixed": "#34003f",
+              "secondary-container": "#97daff",
+              "secondary-dim": "#005673",
+              "primary-container": "#ff709f",
+              "on-primary-fixed-variant": "#5d002b",
+              "on-tertiary": "#ffeefc",
+              "on-surface-variant": "#5e5b5d",
+              "surface-container": "#ece6ea",
+              "outline-variant": "#b0acaf",
+              "error-container": "#f74b6d",
+              "error": "#b41340",
+              "background": "#fbf5f8",
+              "on-error": "#ffefef",
+              "inverse-surface": "#0f0e10",
+              "on-primary": "#ffeff1",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-low": "#f5eff2",
+              "on-primary-container": "#4c0022",
+              "tertiary-fixed-dim": "#db86e9",
+              "on-background": "#302e30",
+              "secondary": "#006384",
+              "on-surface": "#302e30",
+              "on-secondary-fixed-variant": "#005775",
+              "on-primary-fixed": "#000000",
+              "surface-bright": "#fbf5f8",
+              "on-tertiary-fixed-variant": "#631474",
+              "surface": "#fbf5f8",
+              "tertiary-dim": "#7a2d8a",
+              "outline": "#797678",
+              "surface-tint": "#a7295a",
+              "surface-container-high": "#e7e1e5",
+              "secondary-fixed-dim": "#6ccfff",
+              "tertiary-fixed": "#ea93f7",
+              "surface-variant": "#e1dbdf",
+              "on-tertiary-container": "#59046a",
+              "inverse-on-surface": "#a09c9e",
+              "primary": "#a7295a",
+              "surface-container-highest": "#e1dbdf",
+              "tertiary-container": "#ea93f7",
+              "inverse-primary": "#fd6c9c",
+              "on-secondary-fixed": "#00394e"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .cotton-candy-bg {
+            background: linear-gradient(135deg, #fbf5f8 0%, #e6f5ff 100%);
+            position: relative;
+            overflow-x: hidden;
+        }
+        .cloud-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle at 20% 30%, rgba(255,255,255,0.8) 0%, transparent 20%),
+                              radial-gradient(circle at 80% 10%, rgba(255,255,255,0.6) 0%, transparent 25%),
+                              radial-gradient(circle at 50% 50%, rgba(255,255,255,0.7) 0%, transparent 30%),
+                              radial-gradient(circle at 10% 80%, rgba(255,255,255,0.5) 0%, transparent 15%),
+                              radial-gradient(circle at 90% 90%, rgba(255,255,255,0.6) 0%, transparent 20%);
+            filter: blur(60px);
+            pointer-events: none;
+            z-index: 0;
+        }
+        .candy-border-icon {
+            position: absolute;
+            z-index: 40;
+            pointer-events: none;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="cotton-candy-bg font-body text-on-background selection:bg-primary-container selection:text-on-primary-container">
+<div class="cloud-overlay"></div>
+<!-- Decorative Candy Borders -->
+<div class="candy-border-icon top-10 left-4 rotate-[-15deg]">
+<span class="material-symbols-outlined text-6xl text-primary-fixed" style="font-variation-settings: 'FILL' 1;">icecream</span>
+</div>
+<div class="candy-border-icon top-40 right-6 rotate-[10deg]">
+<span class="material-symbols-outlined text-5xl text-secondary-fixed" style="font-variation-settings: 'FILL' 1;">icecream</span>
+</div>
+<div class="candy-border-icon bottom-20 left-10 rotate-[20deg]">
+<span class="material-symbols-outlined text-7xl text-tertiary-fixed" style="font-variation-settings: 'FILL' 1;">bakery_dining</span>
+</div>
+<div class="candy-border-icon top-[50%] right-2 rotate-[-5deg]">
+<span class="material-symbols-outlined text-5xl text-primary" style="font-variation-settings: 'FILL' 1;">cookie</span>
+</div>
+<div class="candy-border-icon bottom-40 right-10 rotate-[-25deg]">
+<span class="material-symbols-outlined text-6xl text-secondary" style="font-variation-settings: 'FILL' 1;">cake</span>
+</div>
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full flex justify-between items-center px-6 py-4 max-w-full bg-surface/80 dark:bg-slate-900/80 backdrop-blur-md z-50 no-line tonal-shift bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-pink-600 dark:text-pink-400 text-3xl" data-icon="bubble_chart">bubble_chart</span>
+<span class="text-pink-700 dark:text-pink-300 font-headline font-extrabold tracking-tighter text-2xl">THE CANDY JAR</span>
+</div>
+<nav class="hidden md:flex gap-8">
+<a class="text-pink-800 dark:text-pink-200 font-bold border-b-2 border-pink-500 transition-colors duration-300" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-pink-500 dark:hover:text-pink-300 transition-colors duration-300" href="#">Flavor Lab</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-pink-500 dark:hover:text-pink-300 transition-colors duration-300" href="#">Seasonal</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-pink-500 dark:hover:text-pink-300 transition-colors duration-300" href="#">Archive</a>
+</nav>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-full font-bold shadow-lg hover:scale-95 active:scale-90 transition-transform">
+            Add to Cart
+        </button>
+</header>
+<main class="relative z-10 pt-24">
+<!-- Hero Section -->
+<section class="px-6 md:px-12 py-20 flex flex-col md:flex-row items-center gap-12 max-w-7xl mx-auto">
+<div class="flex-1 space-y-8 text-center md:text-left">
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-primary leading-tight tracking-tight">
+                    Sweet Dreams are <br/> Made of This
+                </h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-xl mx-auto md:mx-0">
+                    Explore a curated universe of confections, from shimmering crystal gems to neon sours. Hand-picked, sugar-coated joy delivered to your door.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-10 py-4 rounded-full text-lg font-bold shadow-xl hover:shadow-primary/20 transition-all active:scale-95">
+                        Start Your Mix
+                    </button>
+<button class="bg-secondary-container text-on-secondary-container px-10 py-4 rounded-full text-lg font-bold hover:bg-secondary-fixed-dim transition-colors active:scale-95">
+                        View Archive
+                    </button>
+</div>
+</div>
+<div class="flex-1 relative">
+<div class="absolute -inset-4 bg-tertiary-container/30 blur-3xl rounded-full"></div>
+<img alt="Colorful assortment of assorted candies" class="relative z-10 w-full h-auto rounded-lg shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500 object-cover aspect-square" data-alt="Close up of vibrant colorful assortment of candies and sweets" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzRjSCG2kUlgmMZP9pQHwXDqVJKO8FFR8m7MGWF0CFLGp9vvLUFWLrobVO0T5kAbU0wpPvZcqyhElCVQIgXXgwkTEzdSbdi7e9QTcz1GTEpZMeIrxin02sralH-zMeELS8deI-6oDc5xqlLe0e_Ny3ASxuaynJ6y6WqrvDG-incr7VTFLPTsG3fvJMnKGA8lep4ZDaWFeDcyNYjNlgkIuLRaZlNk14okK3rmzTNt6jeK0WCPCYSVbdJPYh8cXI55YPojK6MRsyBho"/>
+<!-- Floating Ornaments -->
+<div class="absolute -top-6 -right-6 z-20 animate-bounce">
+<span class="material-symbols-outlined text-6xl text-primary-fixed" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</section>
+<!-- Seasonal Themes (Asymmetric Layout) -->
+<section class="py-24 px-6 md:px-12 max-w-7xl mx-auto overflow-hidden">
+<div class="mb-16">
+<span class="font-label text-primary font-bold tracking-[0.2em] uppercase text-sm">Limited Collections</span>
+<h2 class="font-headline text-4xl font-bold mt-2 text-on-background">Seasonal Magic</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<!-- Christmas -->
+<div class="md:col-span-7 bg-surface-container-lowest p-8 rounded-lg shadow-sm border border-outline-variant/10 hover:shadow-xl transition-all group relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-8xl text-error">ac_unit</span>
+</div>
+<div class="relative z-10">
+<span class="inline-block bg-error-container text-on-error-container px-4 py-1 rounded-full text-xs font-bold mb-4 uppercase">Yuletide Jar</span>
+<h3 class="font-headline text-3xl font-bold mb-4">The Winter Wonderland</h3>
+<p class="text-on-surface-variant mb-6 max-w-md">Peppermint candy canes, snow-dusted marshmallows, and glittering silver drops. A festive chill in every bite.</p>
+<button class="text-primary font-bold flex items-center gap-2 group-hover:translate-x-2 transition-transform">
+                            Explore the Frost <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<img alt="Festive peppermint and holiday sweets" class="mt-8 w-full h-64 object-cover rounded-md group-hover:scale-105 transition-transform duration-700" data-alt="Festive holiday candy arrangement with peppermint and snow dusting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiEO3hy3RNOAPKz9LFKeo1JQB0_ggbffs4o-e7_APWIqsQMA9yk5cUXCUlN9qjpm4qIQHyczzU7s1jA_KU0l9rWqJpcq_6WZp_Mp8zKfLZbkfmLZRMEBIt6IObIDnH4Rx-vWQDqcqhSDSJlfJ7gciHXdSOYNZkkPbcHiDm-5wGFRuJGyiJ9nRau3e11r_Z_N9PZXX4NGUNhXBqQzF0kPboAYAsh4ztki90hiLNZIDCzGcyyi1Fh2PzBiWIx8Mg4QgRbCP6iPGh8Z8"/>
+</div>
+<!-- Halloween -->
+<div class="md:col-span-5 bg-slate-900 text-on-primary p-8 rounded-lg shadow-sm hover:shadow-2xl transition-all group relative overflow-hidden self-end md:-mb-12">
+<div class="absolute inset-0 bg-gradient-to-br from-tertiary/20 to-transparent"></div>
+<div class="relative z-10">
+<span class="inline-block bg-tertiary-container text-on-tertiary-container px-4 py-1 rounded-full text-xs font-bold mb-4 uppercase">Spooky Soiree</span>
+<h3 class="font-headline text-3xl font-bold mb-4">Midnight Mischief</h3>
+<p class="text-slate-300 mb-6">Deep purple gummies, neon orange sours, and glowing sugar bats. Mysterious and delicious.</p>
+<img alt="Gothic themed halloween candy" class="w-full h-48 object-cover rounded-md mb-6 grayscale hover:grayscale-0 transition-all duration-500" data-alt="Deep purple and orange spooky halloween gummy candies" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqzDMLzhv3MoaGR-0gODsHtVgVIbtgpsHNbCJ85dg0IWOAeKrCZTbnBWga13j2b9YgG3SDP-mOgkNzjbEd9YCAv173oo24A45u8H8hpFc8UrmRfCuqfBLEiluNLh3DgXbe8NQLJyEmx5VZV01zvx2dD0N8sd7yo4ExNsAMG2LiDrRzFbONBe7qPVippC6P0hXlSFhsv1PUvXD7mGZ9ytbgXrixjOXg7IlHF6mnZG9_WCnwhwflFhMBCWwqnz2KXiZXvSNLOSP_UEw"/>
+<button class="bg-primary text-on-primary w-full py-3 rounded-full font-bold hover:bg-primary-dim transition-colors">
+                            Enter if You Dare
+                        </button>
+</div>
+</div>
+<!-- Birthday Bash -->
+<div class="md:col-span-12 mt-12 md:mt-0 bg-surface-container p-12 rounded-lg text-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#a7295a 1px, transparent 1px); background-size: 20px 20px;"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-6xl text-secondary mb-4" style="font-variation-settings: 'FILL' 1;">celebration</span>
+<h3 class="font-headline text-4xl font-extrabold mb-4">The Birthday Bash Edition</h3>
+<p class="text-on-surface-variant max-w-2xl mx-auto mb-8 text-lg">Confetti sprinkles, cake-batter bites, and party-pop fizzers. Every day is a celebration when you've got the Bash Jar.</p>
+<button class="bg-secondary text-on-secondary px-12 py-4 rounded-full text-lg font-bold shadow-lg hover:shadow-secondary/20 active:scale-95 transition-all">
+                            Party Pack Details
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Flavor Mixology Lab -->
+<section class="py-24 px-6 md:px-12 bg-surface-container-low rounded-[3rem] max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline text-4xl font-bold text-on-background">Flavor Mixology Lab</h2>
+<p class="text-on-surface-variant mt-4">Drag, drop, and discover your signature sugar profile.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="bg-surface-container-lowest p-8 rounded-lg text-center hover:scale-105 transition-transform cursor-pointer border-2 border-transparent hover:border-primary-container">
+<span class="material-symbols-outlined text-5xl text-primary mb-4">potted_plant</span>
+<h4 class="font-bold">Sour Bloom</h4>
+<p class="text-xs text-on-surface-variant mt-2">Tart citrus &amp; wild berries</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-lg text-center hover:scale-105 transition-transform cursor-pointer border-2 border-transparent hover:border-secondary">
+<span class="material-symbols-outlined text-5xl text-secondary mb-4">waves</span>
+<h4 class="font-bold">Neon Ripple</h4>
+<p class="text-xs text-on-surface-variant mt-2">Blue raspberry &amp; fizz</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-lg text-center hover:scale-105 transition-transform cursor-pointer border-2 border-transparent hover:border-tertiary">
+<span class="material-symbols-outlined text-5xl text-tertiary mb-4">auto_awesome</span>
+<h4 class="font-bold">Galaxy Dust</h4>
+<p class="text-xs text-on-surface-variant mt-2">Shimmering grape &amp; cream</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-lg text-center hover:scale-105 transition-transform cursor-pointer border-2 border-transparent hover:border-primary">
+<span class="material-symbols-outlined text-5xl text-primary mb-4">favorite</span>
+<h4 class="font-bold">Sweet Heart</h4>
+<p class="text-xs text-on-surface-variant mt-2">Classic strawberry velvet</p>
+</div>
+</div>
+</section>
+<!-- Extended Candy Archive -->
+<section class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<span class="font-label text-secondary font-bold tracking-widest uppercase text-sm">The Vault</span>
+<h2 class="font-headline text-4xl font-bold mt-2">Candy Archive</h2>
+</div>
+<div class="flex gap-4">
+<button class="px-6 py-2 rounded-full border border-outline-variant font-bold text-sm hover:bg-surface-container-high transition-colors">Filter by Flavor</button>
+<button class="px-6 py-2 rounded-full border border-outline-variant font-bold text-sm hover:bg-surface-container-high transition-colors">Sort by Price</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+<!-- Archive Card 1 -->
+<div class="group">
+<div class="bg-surface-container-lowest rounded-lg p-4 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 relative overflow-hidden">
+<span class="absolute top-4 right-4 z-20 bg-tertiary-container text-on-tertiary-container text-[10px] font-bold px-3 py-1 rounded-full uppercase">Rare</span>
+<img alt="Rainbow Licorice ropes" class="w-full h-56 object-cover rounded-md mb-6 group-hover:scale-110 transition-transform duration-500" data-alt="Long colorful rainbow licorice candy ropes in a bunch" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAakCruzd07DOk9mwzJcq4cblxYepJx9FNosezC5sfhHlOdhsQL0BXiPM4A_vM59PHOn0HRE_OkOPaKV34XK51TOyyFN6RiUiOgSb4qr0uFAmG_WWfd1KeZzhpgaUKV_ST3OCgia-wyW23LRMM9I2EwN1Af9qrdLS_K56EH0tAFSaYjF91l7K3b-B-cYJ2csi4AlFaAbZciujAejQGK9N5b0SAOw1pfFRw5IswhVOEZ6ApKeCiu3Ge-kVIjtIz9iubVz0UvB3u3mYE"/>
+<h4 class="font-headline text-lg font-bold">Rainbow Licorice</h4>
+<div class="flex justify-between items-center mt-4">
+<span class="font-label font-bold text-primary">$8.50</span>
+<button class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Archive Card 2 -->
+<div class="group">
+<div class="bg-surface-container-lowest rounded-lg p-4 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 relative overflow-hidden">
+<img alt="Sour watermelon slices" class="w-full h-56 object-cover rounded-md mb-6 group-hover:scale-110 transition-transform duration-500" data-alt="Gummy sour watermelon slices coated in sugar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXdQR4HKrwYcW-9hDtrP0y1TBm5apEpUrn7p4KMpVoKb43YXY7F754U9f6uEznPbs_gQR3AHKpInpybgXx_opAyJNv-Ae0wylRbrMYKZhBUMSM_ks-rVW3j6adrxzfOF_a5Jc2vxogmMsmLw-zcVZIZT62SCAlogw_Fia9U4ei0ZX0yiMNC5JF6g0APtTyjmfp5IiyAM812YmnFowuHbSGpwYw00drj1MF9pbvyx04FFYtni4VqF6B8ufHPbtyJm0-_WKm1gF8rNo"/>
+<h4 class="font-headline text-lg font-bold">Watermelon Slices</h4>
+<div class="flex justify-between items-center mt-4">
+<span class="font-label font-bold text-primary">$4.25</span>
+<button class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Archive Card 3 -->
+<div class="group">
+<div class="bg-surface-container-lowest rounded-lg p-4 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 relative overflow-hidden">
+<img alt="Rock candy gems" class="w-full h-56 object-cover rounded-md mb-6 group-hover:scale-110 transition-transform duration-500" data-alt="Sparkling colorful crystal rock candy sugar gems" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmyP2qHesKw-4u-XGHw8h_ZZIS-yNaezDsvEY_97e108CDeUPM3e_rDaD6nTLasrJFMN8GcDBeOneu6hoi2_EdPF7Z6M7Z4b3lolWCsDev8PzuFDBftXybtWnrJdYyaeICgK2pp6r6Fl1SLzcuS4DZSBVUwPENVLvAylyA76C1YxjuCTS-vEVjswR_SItbssjHTTuwJ6VYR3gNrk3KBU1Jk7hd5tlIx69JVMiTwDWRQZEtc9IOj7DX1tYthHbcWXA2bvJSYhiRXcc"/>
+<h4 class="font-headline text-lg font-bold">Crystal Gems</h4>
+<div class="flex justify-between items-center mt-4">
+<span class="font-label font-bold text-primary">$12.00</span>
+<button class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Archive Card 4 -->
+<div class="group">
+<div class="bg-surface-container-lowest rounded-lg p-4 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 relative overflow-hidden">
+<img alt="Gummy bears in a garden setting" class="w-full h-56 object-cover rounded-md mb-6 group-hover:scale-110 transition-transform duration-500" data-alt="A cluster of colorful translucent gummy bears" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPGG7TqV1BTgjwpasj2RiKa9mpAjdH2AWEWJSjWfSKZdHtlxhoKhOUg60Kso50xGhTFCTk_S_ImdYL79TLlr0BCVAl2KTCQ_iSpe25ZbdFClBV0vtVqcTqx2Tp4Hc-QQB2NyBoz7ZMIM4AqpAQXXwJoU3URXFIqzgt8RGrho4NWdT5jWCRJ53OQ4VJ69kSkRFacki5t6oXSZxD-quTAxIKxx4-dysY-yLzjZm4-thID7Id1iVGKcPyxGWcyQTXYoDxhOO5KKTAG08"/>
+<h4 class="font-headline text-lg font-bold">Classic Bear Garden</h4>
+<div class="flex justify-between items-center mt-4">
+<span class="font-label font-bold text-primary">$3.00</span>
+<button class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Archive Card 5 -->
+<div class="group">
+<div class="bg-surface-container-lowest rounded-lg p-4 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 relative overflow-hidden">
+<img alt="Neon sour gummy worms" class="w-full h-56 object-cover rounded-md mb-6 group-hover:scale-110 transition-transform duration-500" data-alt="Brightly colored neon neon sour gummy worms sweets" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgi3eJLe6daD26f4J6AzdDKtkIcHYNxhD9QYpeKlhN0CTu4ibHzcfkbjqogQD6BbIe1g7Y_7QoZhC_UnHwIc2YivxV651b-l4cy6YqJP5RocmYSPBhy5oFt2UMpeyaEl_VCmZLDWpuaAta229wCV4Be3-Lsiq4ljRTjbAUYVBiKhTCn2-N7KgQ5kngGy_M9P_3hWm9rpSBv57mhLlsHTCLcQe6Ajmu8r1HXECFqHd9_NR8XFhJlSLxZKt8wHSXeqAz2vE1YE2mwXE"/>
+<h4 class="font-headline text-lg font-bold">Neon Sour Worms</h4>
+<div class="flex justify-between items-center mt-4">
+<span class="font-label font-bold text-primary">$5.75</span>
+<button class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Archive Card 6 -->
+<div class="group">
+<div class="bg-surface-container-lowest rounded-lg p-4 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 relative overflow-hidden">
+<img alt="Macaroon cookies" class="w-full h-56 object-cover rounded-md mb-6 group-hover:scale-110 transition-transform duration-500" data-alt="Assorted colorful French macaroons" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUZTc6j9DczZbBbgDZZiiiPN_Tv-jA9nOjJs3iVT-yXIJOI-FlO0Cr3mGIzUoVHBZXigzehpPHnf8mijPQ8BVowANWtvVC3MIyYFMPk80pjVVu5sR2pXFbMln360juMGwfBA2aqm4LXMtET5XxovRboZAxzAW9HaNavWfO7m_ow0w_I67vqSns6YVq0hONhWzc0lvjZA2ZEmQH2qPdjJ06uym1020qQIQHORRWHyd0d43mDN_jLuGHUXNrFY1Ml7Be_njfzeUjnv0"/>
+<h4 class="font-headline text-lg font-bold">Posh Petites</h4>
+<div class="flex justify-between items-center mt-4">
+<span class="font-label font-bold text-primary">$9.99</span>
+<button class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Sweet Facts & Tips -->
+<section class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+<div class="bg-white/40 backdrop-blur-xl border border-white/50 rounded-xl p-12 relative overflow-hidden">
+<div class="absolute -top-12 -left-12 w-48 h-48 bg-primary/10 blur-3xl rounded-full"></div>
+<div class="absolute -bottom-12 -right-12 w-48 h-48 bg-secondary/10 blur-3xl rounded-full"></div>
+<div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="font-headline text-4xl font-extrabold text-primary mb-6">Sweet Trivia &amp; Tips</h2>
+<ul class="space-y-6">
+<li class="flex gap-4">
+<div class="shrink-0 w-12 h-12 bg-primary-container rounded-full flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined">history_edu</span>
+</div>
+<div>
+<h5 class="font-bold text-lg">Marshmallow History</h5>
+<p class="text-on-surface-variant">Ancient Egyptians were the first to make marshmallows from the sap of the mallow plant!</p>
+</div>
+</li>
+<li class="flex gap-4">
+<div class="shrink-0 w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined">inventory_2</span>
+</div>
+<div>
+<h5 class="font-bold text-lg">The Cool Tip</h5>
+<p class="text-on-surface-variant">Store your gummy bears in a cool, dry place. Too much heat turns them into one giant mega-bear!</p>
+</div>
+</li>
+<li class="flex gap-4">
+<div class="shrink-0 w-12 h-12 bg-tertiary-container rounded-full flex items-center justify-center text-on-tertiary-container">
+<span class="material-symbols-outlined">science</span>
+</div>
+<div>
+<h5 class="font-bold text-lg">Why Cotton Candy?</h5>
+<p class="text-on-surface-variant">It was invented by a dentist! Dr. William Morrison co-created the first machine in 1897.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-lg shadow-inner">
+<img alt="Whimsical candy clouds" class="w-full h-auto rounded shadow-lg mb-6" data-alt="Abstract colorful clouds of cotton candy against blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHxITGlOaaEI6Ae73TSObjpiaIqr-dqYbx07SLIGZg9TDK2pVI4Hp9F-b6igrtuabPC0Bgh2y62yGWPHFXG-S-xSKb34OyuVCZJszeS1FT1hworLfW7y-x04Yfx6WQbIQFLLU3ym0OMjANDMh6MotUn1tmaekXYoOTIQBy-XHtS_8DGeohbtSI7LsIJkIWUrCCLyE2ZJsEL0A1mCc_GVu65PQzpUS8twr6LYEpfS9_wuuC4dI_szLBSCE7vMNLhDxVGL_FzJSWw_s"/>
+<blockquote class="italic text-on-surface-variant border-l-4 border-primary pl-4">
+                            "A little sugar now and then makes the world a much sweeter place to dream."
+                        </blockquote>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-high dark:bg-slate-950 rounded-t-[3rem] w-full mt-20 flex flex-col md:flex-row justify-between items-center px-12 py-10 gap-6">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="text-lg font-bold text-pink-700 dark:text-pink-300 font-headline uppercase tracking-tighter">THE CANDY JAR</span>
+<p class="font-manrope text-sm tracking-wide text-slate-500 dark:text-slate-500 text-center md:text-left">© 2024 THE CANDY JAR. Crafted with sugar and joy.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 font-manrope text-sm tracking-wide">
+<a class="text-slate-500 hover:text-pink-400 dark:hover:text-pink-200 transition-all opacity-80 hover:opacity-100" href="#">Flavor Lab</a>
+<a class="text-slate-500 hover:text-pink-400 dark:hover:text-pink-200 transition-all opacity-80 hover:opacity-100" href="#">Holiday Specials</a>
+<a class="text-slate-500 hover:text-pink-400 dark:hover:text-pink-200 transition-all opacity-80 hover:opacity-100 underline" href="#">Candy Archive</a>
+<a class="text-slate-500 hover:text-pink-400 dark:hover:text-pink-200 transition-all opacity-80 hover:opacity-100" href="#">Shipping</a>
+<a class="text-slate-500 hover:text-pink-400 dark:hover:text-pink-200 transition-all opacity-80 hover:opacity-100" href="#">Privacy</a>
+</div>
+<div class="flex gap-4">
+<button class="w-10 h-10 rounded-full bg-pink-100 dark:bg-pink-900 flex items-center justify-center text-pink-600 dark:text-pink-400 hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-lg">share</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-pink-100 dark:bg-pink-900 flex items-center justify-center text-pink-600 dark:text-pink-400 hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-lg">mail</span>
+</button>
+</div>
+</footer>
+</body></html>
